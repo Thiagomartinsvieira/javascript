@@ -1,9 +1,13 @@
-pessoa = {
+const pessoa = {
     nome: 'Thiago',
     sobrenome: 'Vieira',
     Idade: 22,
-    endereço:{
-        'Rua Ivani Isaac Pires',
+    endereco: {
+        rua: 'Ivani Isaac Pires',
         numero: 129
     }
 };
+
+// Atribuição via desestruturação
+const { nome, sobrenome, ...resto} = pessoa;
+console.log(resto);
